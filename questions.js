@@ -16,3 +16,25 @@
 function factorialize(num) {
   // Well... welcome to the Unknown
 }
+
+// Write a program that prints the numbers from 1 to 100. But for multiples of three, print "Fizz" instead of the number, and for the multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
+
+function fizzBuzz() {
+let nums = []
+
+for (let i = 1; i <= 100; i++) {
+  nums.push(i)
+}
+
+
+
+let byThree = (nums.filter((num) => num % 3 === 0)) 
+let byFive = nums.filter(num => num % 5 === 0)
+let byThreeAndFive = nums.filter((num) => (num % 3 === 0) && (num % 5 === 0))
+
+console.log(byThree)
+
+}
+
+
+fizzBuzz()
