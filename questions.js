@@ -73,3 +73,22 @@ const removeElement = function(nums, val){
 // check each element against val 
 // remove element if it matches
 // return length of remaining array, and the mutated array
+
+
+// IS PRIME
+
+// A prime number is a number that is divisible by 1 and itself only. First few prime numbers are: 2, 3, 5, 7, 11, 13, 17, …
+// A JavaScript uses the DOM model to check the input number is prime or not and display its corresponding alert message on the screen.
+
+function isPrime(x){
+if (x < 2) return false
+for (let i = 2; i < x; i ++){
+  if (x % i === 0) return false
+} return true
+
+} 
+
+console.log(isPrime(9))
+
+// if the number is less than 2, not a prime
+// check the number against all prior numbers to see if you can get a %0 then return false
