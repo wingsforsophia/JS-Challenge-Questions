@@ -39,21 +39,37 @@ function factorialize(num) {
 
 
 
-function fizzBuzz(){
-  for (let i = 1; i <= 100; i++){
-    let output = ''
-    if (i % 5 == 0 && i % 3 == 0){
-    output += 'Fizz-Buzz' 
-    } else if (i % 3 == 0) {
-      output += 'Fizz'
-    } else if (i % 5 == 0) {
-      output += 'Buzz'
-    } else {
-      output += i
-    }
-    console.log(output)
-  }
+// function fizzBuzz(){
+//   for (let i = 1; i <= 100; i++){
+//     let output = ''
+//     if (i % 5 == 0 && i % 3 == 0){
+//     output += 'Fizz-Buzz' 
+//     } else if (i % 3 == 0) {
+//       output += 'Fizz'
+//     } else if (i % 5 == 0) {
+//       output += 'Buzz'
+//     } else {
+//       output += i
+//     }
+//     console.log(output)
+//   }
+// }
+  
+  
+// fizzBuzz()
+
+const removeElement = function(nums, val){
+  let newArr = []
+  for (let i = 0; i < nums.length; i++){
+    if (nums[i] !== val){
+      newArr.push(nums[i])
+    } 
+  } return `${newArr.length}, nums = ${newArr}`
 }
-  
-  
-fizzBuzz()
+
+// console.log(removeElement([2,4,9,10,6,7,4], 4))
+
+// iterate over the array 
+// check each element against val 
+// remove element if it matches
+// return length of remaining array, and the mutated array
